@@ -57,7 +57,7 @@ Before starting copy all the files from the previous assignment in this folder a
   
 
 
-## Task 3 - Transferring logic to the data layer and service layer
+## Task 3 - Transferring Customer logic to the data layer and service layer 
 
 ### 1. createCustomer()
   1. Bring the  `Customer.create()` logic (data related logic) to the `customerData.js`, you can create a method there `createCustomer` which will create the new customer. 
