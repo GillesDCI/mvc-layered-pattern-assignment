@@ -64,15 +64,16 @@ Before starting copy all the files from the previous assignment in this folder a
  
   2. Open `customerService.js` and import the `customerData` file. 
 
-  3. Create a method in `customerService.js` to creat a customer.
+  3. Create a method `createCustomer` in `customerService.js` which uses the `customerData.createCustomer()` to create a new customer.
  
   3. Adapt the controller method `createCustomer()` so it uses `customerService` to create a new customer. 
 
-  ### 1. createCustomer()
-  1. Bring the  `Customer.find()` logic (data related logic) to the `customerData.js`, you can create a method there `getCustomers` which will return a list of customers. 
+  ### 2. getCustomers()
+  1. Bring the  `Customer.find()` logic (data related logic) to the `customerData.js` file, you can create a method there `getCustomers` which will return a list of customers. 
 
- 
-  2. Adapt the controller method `createCustomer()` so it uses `customerService` to create a new customer. 
+  2. Create a method `getCustomers` in `customerService.js` which uses the `customerData.getCustomers()` to get a list of customers.
+
+  3. Adapt the controller method `getCustomers()` so it uses `customerService` to query for a list of customers. 
 
 ### 2. getCustomers()
   1. Bring the data related logic to the `customerData.js`, get list of customers there
