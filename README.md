@@ -75,17 +75,24 @@ Before starting copy all the files from the previous assignment in this folder a
 
   3. Adapt the controller method `getCustomers()` so it uses `customerService` to query for a list of customers. 
 
-### 2. getCustomers()
-  1. Bring the data related logic to the `customerData.js`, get list of customers there
+
+## Task 4 - Transferring Hotel logic to the data layer and service layer 
+
+### 1. createHotel()
+  1. Bring the  `Hotel.create()` logic (data related logic) to the `hotelData.js`, you can create a method there `createHotel` which will create the new hotel. 
  
-  2. import the `customerController` inside the customerRoutes. 
+  2. Open `hotelService.js` and import the `hotelData` file. 
 
-### 3. Reservation controller
-  1. Create a new `reservationController.js` file inside the controllers folder. 
+  3. Create a method `createHotel` in `hotelService.js` which uses the `hotelData.createHotel()` to create a new hotel.
  
-  2. import the `reservationController` inside the reservationRoutes. 
+  3. Adapt the controller method `createHotel()` so it uses `hotelService` to create a new customer. 
 
+  ### 2. getHotels()
+  1. Bring the  `Hotel.find()` logic (data related logic) to the `hotelData.js` file, you can create a method there `getHotels` which will return a list of hotels. 
 
+  2. Create a method `getHotels` in `hotelService.js` which uses the `hotelData.getHotels()` to get a list of hotels.
+
+  3. Adapt the controller method `getHotels()` so it uses `hotelService` to query for a list of hotels. 
 
 ## Task 4 - Customer Controller
   1. Create a new controller method `createCustomer()` and add the logic to create a new customer.
