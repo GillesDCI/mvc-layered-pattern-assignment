@@ -1,7 +1,6 @@
 # Create an API for a Booking site - PART II
 
-In this project we will continue building our API for booking a hotel. We will be able to add customers
-to our backend and customers will be able to book a hotel. 
+In this project we will continue building our API for booking a hotel. We will integrate a data la
 
 ## What you will be doing
 
@@ -31,18 +30,14 @@ Before starting copy all the files from the previous assignment in this folder a
 ### 1. customerData
    1. Create a new `customerData.js` file inside the data folder. 
    
-   2. Transfer all data related logic (calls to the database) from the customerController into the data. 
-
 
 ### 2. hotelData
   1. Create a new `hotelData.js` file inside the data folder. 
  
-  2. Transfer all data related logic (calls to the database) from the hotelController into the data. 
 
 ### 3. reservationData
   1. Create a new `reservationData.js` file inside the data folder. 
  
-  2. Transfer all data related logic (calls to the database) from the reservationController into the data. 
 
 
 ## Task 2 - Creating and configuring the Service Layer
@@ -51,32 +46,32 @@ Before starting copy all the files from the previous assignment in this folder a
 
 ### 1. customerService
    1. Create a new `customerService.js` file inside the service folder. 
-   
-   2. Transfer all service related logic (calls to the database) from the controllers into the data. 
 
 
 ### 2. hotelService
   1. Create a new `hotelService.js` file inside the service folder. 
  
-  2. Transfer all data related logic (calls to the database) from the hotelController into the data. 
 
 ### 3. reservationService
   1. Create a new `reservationService.js` file inside the service folder. 
+  
+
+
+## Task 3 - Transferring logic to the data layer and service layer
+
+### 1. createCustomer()
+  1. Bring the data related logic to the `customerData.js`, you can create a method there `createCustomer`. 
  
-  2. Transfer all service related logic (calls to the database) from the hotelController into the data. 
+  2. Bring the business logic to the service layer, create a method there `createCustomer`
 
+  3. import the `createCustomer` method in the service layer, use it in the service layer method `createCustomer`
 
-## Task 3 - Creating and configuring controllers
+  4. Adapt the controller method `createCustomer()` so it uses the service layer to create a new customer. 
 
-### 1. Customer controller
-  1. Create a new `customerController.js` file inside the controllers folder. 
+### 2. getCustomers()
+  1. Bring the data related logic to the `customerData.js`, get list of customers there
  
   2. import the `customerController` inside the customerRoutes. 
-
-### 2. Hotel controller
-  1. Create a new `hotelController.js` file inside the controllers folder. 
- 
-  2. import the `hotelController` inside the hotelRoutes. 
 
 ### 3. Reservation controller
   1. Create a new `reservationController.js` file inside the controllers folder. 
