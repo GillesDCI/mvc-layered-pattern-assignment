@@ -60,13 +60,19 @@ Before starting copy all the files from the previous assignment in this folder a
 ## Task 3 - Transferring logic to the data layer and service layer
 
 ### 1. createCustomer()
-  1. Bring the data related logic to the `customerData.js`, you can create a method there `createCustomer`. 
+  1. Bring the  `Customer.create()` logic (data related logic) to the `customerData.js`, you can create a method there `createCustomer` which will create the new customer. 
  
-  2. Bring the business logic to the service layer, create a method there `createCustomer`
+  2. Open `customerService.js` and import the `customerData` file. 
 
-  3. import the `createCustomer` method in the service layer, use it in the service layer method `createCustomer`
+  3. Create a method in `customerService.js` to creat a customer.
+ 
+  3. Adapt the controller method `createCustomer()` so it uses `customerService` to create a new customer. 
 
-  4. Adapt the controller method `createCustomer()` so it uses the service layer to create a new customer. 
+  ### 1. createCustomer()
+  1. Bring the  `Customer.find()` logic (data related logic) to the `customerData.js`, you can create a method there `getCustomers` which will return a list of customers. 
+
+ 
+  2. Adapt the controller method `createCustomer()` so it uses `customerService` to create a new customer. 
 
 ### 2. getCustomers()
   1. Bring the data related logic to the `customerData.js`, get list of customers there
