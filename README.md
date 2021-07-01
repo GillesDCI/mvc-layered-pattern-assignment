@@ -1,6 +1,6 @@
 # Create an API for a Booking site - PART II
 
-In this project we will continue building our API for booking a hotel. We will integrate a data la
+In this project we will continue building our API for booking a hotel. We will integrate a data layer and a service layer.
 
 ## What you will be doing
 
